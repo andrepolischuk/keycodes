@@ -1,0 +1,16 @@
+{
+  "name": "keycodes",
+  "description": "Key codes and names",
+  "version": "0.0.0",
+  "keywords": [
+    "key",
+    "code",
+    "keycode"
+  ],
+  "repository": "andrepolischuk/keycodes",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "keycodes",
+  "description": "Key codes and names",
+  "version": "0.0.0",
+  "keywords": [
+    "key",
+    "code",
+    "keycode"
+  ],
+  "repository": "andrepolischuk/keycodes",
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
+  "license": "MIT"
+}
