@@ -6,16 +6,19 @@
 
 ```sh
 $ npm install --save keycodes
+```
+
+```sh
 $ component install andrepolischuk/keycodes
 ```
 
 ## Usage
 
 ```js
-var keycode = require('keycodes');
+var keycodes = require('keycodes');
 
-keycode('enter'); // 13
-keycode(13); // 'enter'
+keycodes('enter'); // 13
+keycodes(13); // 'enter'
 ```
 
 ## API
