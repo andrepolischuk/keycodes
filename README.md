@@ -2,14 +2,14 @@
 
   > Key codes and names
 
-## Instalation
+## Install
 
 ```sh
-$ npm install --save keycodes
+npm install --save keycodes
 ```
 
 ```sh
-$ component install andrepolischuk/keycodes
+component install andrepolischuk/keycodes
 ```
 
 ## Usage

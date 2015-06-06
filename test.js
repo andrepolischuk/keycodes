@@ -1,7 +1,7 @@
 
 'use strict';
 
-var keycode = require('..');
+var keycode = require('./');
 var assert = require('assert');
 
 describe('keycode(string)', function() {
