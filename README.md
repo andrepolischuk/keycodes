@@ -1,6 +1,8 @@
-# keycodes [![Build Status](https://travis-ci.org/andrepolischuk/keycodes.svg?branch=master)](https://travis-ci.org/andrepolischuk/keycodes)
+# keycodes [![Build Status][travis-image]][travis-url]
 
   > Key codes and names
+
+  [keycodes-cli][keycodes-cli] - CLI for this module
 
 ## Install
 
@@ -34,3 +36,8 @@ keycodes(13); // 'enter'
 ## License
 
   MIT
+
+[travis-url]: https://travis-ci.org/andrepolischuk/keycodes
+[travis-image]: https://travis-ci.org/andrepolischuk/keycodes.svg?branch=master
+
+[keycodes-cli]: https://github.com/andrepolischuk/keycodes-cli
