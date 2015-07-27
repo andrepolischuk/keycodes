@@ -6,6 +6,8 @@ var keys = {
   alt: 18,
   option: 18,
   shift: 16,
+  windows: 91,
+  command: 91,
   esc: 27,
   escape: 27,
   '`': 192,
@@ -25,6 +27,7 @@ var keys = {
   '/': 191,
   space: 32,
   pause: 19,
+  'break': 19,
   insert: 45,
   'delete': 46,
   home: 36,
@@ -34,7 +37,10 @@ var keys = {
   left: 37,
   up: 38,
   right: 39,
-  down: 40
+  down: 40,
+  capslock: 20,
+  numlock: 144,
+  scrolllock: 145
 };
 
 for (var f = 1; f < 20; f++) {

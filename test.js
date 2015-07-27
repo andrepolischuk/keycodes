@@ -9,6 +9,8 @@ describe('keycode(string)', function() {
     assert(keycode('alt') === 18);
     assert(keycode('option') === 18);
     assert(keycode('shift') === 16);
+    assert(keycode('windows') === 91);
+    assert(keycode('command') === 91);
     assert(keycode('esc') === 27);
     assert(keycode('escape') === 27);
     assert(keycode('`') === 192);
@@ -28,6 +30,7 @@ describe('keycode(string)', function() {
     assert(keycode('/') === 191);
     assert(keycode('space') === 32);
     assert(keycode('pause') === 19);
+    assert(keycode('break') === 19);
     assert(keycode('insert') === 45);
     assert(keycode('delete') === 46);
     assert(keycode('home') === 36);
@@ -38,6 +41,9 @@ describe('keycode(string)', function() {
     assert(keycode('up') === 38);
     assert(keycode('right') === 39);
     assert(keycode('down') === 40);
+    assert(keycode('capslock') === 20);
+    assert(keycode('numlock') === 144);
+    assert(keycode('scrolllock') === 145);
     assert(keycode('f1') === 112);
     assert(keycode('f2') === 113);
     assert(keycode('f3') === 114);
@@ -94,6 +100,7 @@ describe('keycode(number)', function() {
     assert(keycode(17) === 'ctrl');
     assert(keycode(18) === 'alt');
     assert(keycode(16) === 'shift');
+    assert(keycode(91) === 'windows');
     assert(keycode(27) === 'esc');
     assert(keycode(192) === '`');
     assert(keycode(189) === '-');
@@ -121,6 +128,9 @@ describe('keycode(number)', function() {
     assert(keycode(38) === 'up');
     assert(keycode(39) === 'right');
     assert(keycode(40) === 'down');
+    assert(keycode(20) === 'capslock');
+    assert(keycode(144) === 'numlock');
+    assert(keycode(145) === 'scrolllock');
     assert(keycode(112) === 'f1');
     assert(keycode(113) === 'f2');
     assert(keycode(114) === 'f3');
