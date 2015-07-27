@@ -1,9 +1,4 @@
-
 'use strict';
-
-/**
- * Keys
- */
 
 var keys = {
   ctrl: 17,
@@ -42,47 +37,18 @@ var keys = {
   down: 40
 };
 
-/**
- * Functions
- */
-
 for (var f = 1; f < 20; f++) {
   keys['f' + f] = 111 + f;
 }
-
-
-/**
- * Expose keycodes
- *
- * @param  {String|Number} input
- * @return {Number|String}
- * @api public
- */
 
 module.exports = function(input) {
   if (typeof input === 'string') return code(input);
   if (typeof input === 'number') return key(input);
 };
 
-/**
- * Get code
- *
- * @param  {String} input
- * @return {Number}
- * @api private
- */
-
 function code(input) {
   return keys[input.toLowerCase()] || input.toUpperCase().charCodeAt(0);
 }
-
-/**
- * Get key
- *
- * @param  {Number} input
- * @return {String}
- * @api private
- */
 
 function key(input) {
   for (var k in keys) {

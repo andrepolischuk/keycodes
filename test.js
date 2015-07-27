@@ -1,6 +1,4 @@
-
 'use strict';
-
 var keycode = require('./');
 var assert = require('assert');
 
