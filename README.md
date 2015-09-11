@@ -1,8 +1,8 @@
 # keycodes [![Build Status][travis-image]][travis-url]
 
-  > Key codes and names
+> Key codes and names
 
-  [keycodes-cli][keycodes-cli] - CLI for this module
+[keycodes-cli][keycodes-cli] - CLI for this module
 
 ## Install
 
@@ -18,7 +18,6 @@ component install andrepolischuk/keycodes
 
 ```js
 var keycodes = require('keycodes');
-
 keycodes('enter'); // 13
 keycodes(13); // 'enter'
 ```
@@ -27,15 +26,15 @@ keycodes(13); // 'enter'
 
 ### keycodes(string)
 
-  Return key code
+Return key code
 
 ### keycodes(number)
 
-  Return key name
+Return key name
 
 ## License
 
-  MIT
+MIT
 
 [travis-url]: https://travis-ci.org/andrepolischuk/keycodes
 [travis-image]: https://travis-ci.org/andrepolischuk/keycodes.svg?branch=master
