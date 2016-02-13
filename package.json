@@ -9,11 +9,12 @@
   ],
   "repository": "andrepolischuk/keycodes",
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "ava": "^0.11.0"
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "ava",
+    "postpublish": "git push --follow-tags"
   },
   "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
   "license": "MIT"
