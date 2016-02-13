@@ -47,7 +47,7 @@ for (var f = 1; f < 20; f++) {
   keys['f' + f] = 111 + f;
 }
 
-module.exports = function(input) {
+module.exports = function (input) {
   if (typeof input === 'string') return code(input);
   if (typeof input === 'number') return key(input);
 };

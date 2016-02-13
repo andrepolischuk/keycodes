@@ -1,2 +1,4 @@
+.DS_Store
 components
 node_modules
+npm-debug.log
