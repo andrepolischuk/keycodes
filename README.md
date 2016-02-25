@@ -2,8 +2,6 @@
 
 > Key codes and names
 
-[keycodes-cli][keycodes-cli] - CLI for this module.
-
 ## Install
 
 ```sh
@@ -33,6 +31,12 @@ Type: `string`, `number`
 
 Key name string or key code number.
 
+## Related
+
+* [keycodes-cli][keycodes-cli] — CLI for this module
+* [keycomb][keycomb] — key combinations parser
+* [ks][ks] — keyboard shortcuts
+
 ## License
 
 MIT
@@ -41,3 +45,5 @@ MIT
 [travis-image]: https://travis-ci.org/andrepolischuk/keycodes.svg?branch=master
 
 [keycodes-cli]: https://github.com/andrepolischuk/keycodes-cli
+[keycomb]: https://github.com/andrepolischuk/keycomb
+[ks]: https://github.com/andrepolischuk/ks
