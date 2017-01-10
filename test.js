@@ -177,3 +177,8 @@ test('return key', function (t) {
   t.is(keycode(89), 'y');
   t.is(keycode(90), 'z');
 });
+
+test('Bogus keycodes', function (t) {
+  t.is(keycode(Math.POSITIVE_INFINITY), undefined);
+  t.is(keycode('foo'), undefined);
+});
