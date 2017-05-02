@@ -8,10 +8,6 @@
 npm install --save keycodes
 ```
 
-```sh
-component install andrepolischuk/keycodes
-```
-
 ## Usage
 
 ```js
