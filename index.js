@@ -1,6 +1,4 @@
-'use strict'
-
-var keys = {
+const keys = {
   'ctrl': 17,
   'control': 17,
   'alt': 18,
@@ -47,7 +45,7 @@ for (var f = 1; f < 20; f++) {
   keys['f' + f] = 111 + f
 }
 
-module.exports = function (input) {
+export default function keycodes (input) {
   if (typeof input === 'string') {
     return code(input)
   }

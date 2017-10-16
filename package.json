@@ -1,22 +1,59 @@
 {
   "name": "keycodes",
-  "description": "Key codes and names",
   "version": "0.2.5",
+  "description": "Key codes and names",
+  "main": "dist",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "scripts": {
+    "test": "standard && ava",
+    "prepublish": "babel index.js --out-dir dist",
+    "postpublish": "rimraf dist && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrepolischuk/keycodes.git"
+  },
   "keywords": [
     "key",
     "code",
     "keycode"
   ],
-  "repository": "andrepolischuk/keycodes",
-  "devDependencies": {
-    "ava": "^0.11.0",
-    "standard": "^10.0.3"
-  },
-  "main": "index.js",
-  "scripts": {
-    "test": "standard && ava",
-    "postpublish": "git push --follow-tags"
-  },
   "author": "Andrey Polischuk <me@andrepolischuk.com> (https://andrepolischuk.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrepolischuk/keycodes/issues"
+  },
+  "homepage": "https://github.com/andrepolischuk/keycodes#readme",
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.0",
+    "cross-env": "^5.0.1",
+    "rimraf": "^2.5.2",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "add-module-exports",
+      "transform-object-rest-spread"
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  }
 }
