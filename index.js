@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 var keys = {
   'ctrl': 17,
@@ -41,37 +41,44 @@ var keys = {
   'capslock': 20,
   'numlock': 144,
   'scrolllock': 145
-};
+}
 
 for (var f = 1; f < 20; f++) {
-  keys['f' + f] = 111 + f;
+  keys['f' + f] = 111 + f
 }
 
 module.exports = function (input) {
-  if (typeof input === 'string') return code(input);
-  if (typeof input === 'number') return key(input);
-};
+  if (typeof input === 'string') {
+    return code(input)
+  }
+
+  if (typeof input === 'number') {
+    return key(input)
+  }
+}
 
 function code (input) {
-  var code = keys[input.toLowerCase()];
+  var code = keys[input.toLowerCase()]
+
   if (code !== undefined) {
-    return code;
+    return code
   }
 
   if (input.length === 1) {
-    return input.toUpperCase().charCodeAt(0);
+    return input.toUpperCase().charCodeAt(0)
   }
 
-  return undefined;
+  return undefined
 }
 
-
-function key(input) {
+function key (input) {
   for (var k in keys) {
     if (keys.hasOwnProperty(k)) {
-      if (keys[k] === input) return k;
+      if (keys[k] === input) {
+        return k
+      }
     }
   }
 
-  return String.fromCharCode(input).toLowerCase();
+  return String.fromCharCode(input).toLowerCase()
 }
