@@ -7,6 +7,9 @@
     "index.js",
     "dist"
   ],
+  "engines": {
+    "node": ">=4"
+  },
   "scripts": {
     "test": "standard && ava",
     "prepublish": "babel index.js --out-dir dist",
