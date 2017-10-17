@@ -1,6 +1,6 @@
 {
   "name": "keycodes",
-  "version": "0.2.5",
+  "version": "1.0.0",
   "description": "Key codes and names",
   "main": "dist",
   "files": [
